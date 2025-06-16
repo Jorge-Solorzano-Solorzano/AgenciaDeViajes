@@ -1,0 +1,55 @@
+.faq{
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 2rem;
+    max-width: 2000px;
+    background-image: url('Img/Fondo6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+details{
+    text-align: left;
+    margin-inline: 500px;
+    background-color: #fadc9d;
+    border: 1px solid #fed785;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 30px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+summary{
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+details[open]{/*Selección específica*/
+    background-color: #fbd582;
+}
+
+details p{
+    margin: 10px 0 0 10px;
+    color: #f8f8f8;
+}
+
+/*@media (max-width: 1800px) {
+  details {
+    margin-left: 7%;
+    width: 90%;
+    padding: 10px;
+  }
+}*/
+@media (max-width: 480px) {
+  details {
+    margin-left: 7%;
+    width: 90%;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,366 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url('Fuentes/Roboto-Italic-VariableFont_wdth\,wght\ \(4\).ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('Fuentes/Roboto-Italic-VariableFont_wdth\,wght.ttf') format(truetype);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-style: italic;
+    font-size: 25px;
+    font: bold;
+    background-color: rgb(113, 193, 254);
+    font-family:'Roboto', inherit;
+    line-height: 1.6;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 2px  1px 1px black,
+        1px  2px 1px black,
+        -2px  1px 1px black,
+        1px -2px 1px black;
+    /*background-image: url('Img/imagenfondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;*/
+}
+
+.meta{
+    padding-top: 176px;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo img{
+    height:100px; /*ajustar el tamaño como tú quieras*/
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+/*Menú*/
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+    flex-wrap: nowrap;
+}
+.menu li{
+    margin: 0 15px;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* === Botón menú hamburguesa === */
+.menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* === SECCION === */
+
+.seccion{
+    scroll-margin-top: 177px;
+    align-items: center;
+    padding: 2rem;
+    max-width: 2000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#header{
+    display: none;
+    background-image: url('Img/Fondo3.jpg');
+}
+#Inicio{
+    background-image: url('Img/Fondo5.jpg');
+}
+#Servicios{
+    background-image: url('Img/Fondo7.jpg');
+}
+#Destinos-y-Precios{
+    background-image: url(Img/Fondo4.jpg);
+}
+#Ofertas{
+    background-image: url(Img/Fondo2.jpg);
+}
+#Suscripción{
+    background-image: url(Img/Fondo8.jpg);
+}
+#Pagos-en-línea{
+    background-image: url(Img/Fondo8.jpg);
+}
+#Comentarios{
+    background-image: url(Img/Fondo6.jpg);
+}
+#Contacto{
+    background-image: url(Img/Fondo6.jpg);
+}
+#Ubicacion{
+    background-image: url(Img/Fondo6.jpg);
+}
+
+.img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 39%;
+}
+
+.img{
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* === Galería de imágenes === */
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.galeria img{
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.galeria img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* === Formulario === */
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin-left: 36%;
+}
+input, textarea{
+    border: 2px solid #fed782;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fadc9d;
+    color: black;
+    border-radius: 15px;
+}
+/*TAREA: Terminar de dar el formato al formulario*/
+.btn{
+    background-color: #fadc9d;
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.btn:hover{
+    background-color: #fed988;
+    transform: scale(1.05);
+}
+
+
+hr{
+    border-color: black;
+}
+
+#submenu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+    flex-wrap: nowrap;
+    background-image: url(Img/Fondo1.jpg);
+}
+#submenu li{
+    margin: 0 15px;
+}
+#submenu a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+    font-size: 25px;
+    font-weight: bold;
+}
+#submenu a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* === Footer === */
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: #4b545b;
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .menu{
+        margin-top: 50px;
+        flex-direction: column;
+        display: none;
+        background-image: url(Img/Fondo3.jpg);
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+    .menu li{
+        margin: 10px 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav .menu{
+        display: flex;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .galeria{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    video{
+        height: auto;
+    }
+
+    .img {
+        margin-left: 15%;
+    }
+
+    form{
+        margin-left: 5%;
+    }
+
+    #submenu{
+        margin-inline: 0%;
+    }
+
+    #submenu li{
+        margin-inline: 10px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    #submenu a{
+        padding: 1px;
+    }
+}
+
+video{
+    width: 75%;
+}
+
+.lista{
+    list-style: none;
+}
+
+.alerta {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #5bc7fd;
+      color: black;
+      padding: 16px 24px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      opacity: 0;
+      animation: mostrarAlerta 4s ease forwards;
+      z-index: 999;
+    }
+
+@keyframes mostrarAlerta {
+    0% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+    10%, 90% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+}
+
+.video{
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    margin-top: 25px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-contenido {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+}
+.cerrar {
+    float: right;
+    cursor: pointer;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vive Sin Límites</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilosfaq.css">
+    <link rel="stylesheet" href="estilosJS.css">
+    <link rel="stylesheet" href="estilosloader.css">
+    <script src="Script.js"></script>
+    <script src="JSloader.js"></script>
+    <link rel="shortcut icon" href="Img/Imagen1.png" type="image/x-ico">
+</head>
+<body>
+    <div id="loader">
+        <div class="alerta">¡Cargando la página!</div>
+            <img src="Img/Imagen1.png" alt="Logo Vive sin Límites">
+        <div id="loader-porcentage">0%</div>
+        <div class="spinner"></div>
+    </div>
+
+    <div id="site-content" class="hidden">
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <p>Bienvenidos a <strong>VIVE SIN LÍMITES</strong></p>
+                <button id="closeBtn">Cerrar</button>
+            </div>
+        </div>
+
+        <header id="header" class="seccion">
+            <!--<h1>Agencia de Viajes<br>VIVE SIN LÍMITES</h1>-->
+
+            <a href="index.html" class="logo">
+                <img src="Img/Imagen1.png" alt="logo de la página">
+            </a>
+
+            <!--Menú Responsivo-->
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Servicios">Servicios</a></li>
+                    <li><a href="#Comentarios">Comentarios</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                    <li><a href="#Ubicacion">Ubicación</a></li>
+                    <li><a href="#PreguntasFrecuentes">Preguntas Frecuentes</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <div class="meta">
+                <section id="Inicio" class="seccion">
+                    <h2>Bienvenidos a "VIVE SIN LÍMITES"</h2>
+                    <p>Descubre nuevos lugares o viaja a tus destinos favoritos. Nosotros te acesoraremos para que tu experiencia sea inigualable.</p>
+                    <video src="Videos/VideoHorizontal.mp4" class="video" controls></video>
+                </section>
+
+                <section id="Servicios" class="seccion">
+                    <h2>Conoce lo servicios que te ofrecemos.</h2>
+                    <ul id="submenu" class="seccion">
+                        <li><a href="#Destinos y Precios">Destinos y Precios</a></li>
+                        <li><a href="#Ofertas">Ofertas</a></li>
+                        <li><a href="#Suscripción">Suscripción</a></li>
+                        <li><a href="#Pagos en línea">Pagos en Línea</a></li>
+                    </ul>
+                    <div class="galeria">
+                        <img src="Img/imagen2.jpg" alt="Viaje en avión">
+                        <img src="Img/imagen12.jpeg" alt="Playa">
+                        <img src="Img/imagen6.jpg" alt="Crucero">
+                    </div>
+                    <div class="galeria">
+                        <img src="Img/imagen4.jpg" alt="Avión">
+                        <img src="Img/imagen5.jpg" alt="Crucero">
+                    </div>
+                </section>
+
+                <section id="Destinos-y-Precios" class="seccion">
+                    <h2>Destinos y Precios</h2>
+                    <h3>Conoce los destinos que te ofrecemos</h3>
+                    <img src="Img/imagen7.jpg" alt="Paris" class="img">
+                    <h4>RUTA EUROPEA COMPLETA<br>Madrid, Londres, Paris, Amsterdam, Praga, Budapest, y mucho más!</h4>
+                    <p>37 Días / 36 Noches</p>
+                    <p>Cancelación gratuita</p>
+                    <p>Suma 106000 millas</p>
+                    <p>Desde</p>
+                    <h3>$123587.3101</h3>
+                    <br>
+                    <hr>
+                    <br>
+                    <img src="Img/imagen9.jpg" alt="Palacio" class="img">
+                    <h4>PORTUGAL Y NORTE DE ESPAÑA<br>Madrid, Lisboa, Oporto, Santiago de Compostela, Oviedo, Santander, San Sebastián y más</h4>
+                    <p>12 Días / 11 Noches</p>
+                    <p>Cancelación gratuita</p>
+                    <p>Suma 34000 millas</p>
+                    <p>Desde</p>
+                    <h3>$40395.8218</h3>
+                    <br>
+                    <hr>
+                    <br>
+                    <img src="Img/imagen14.png" alt="Riviera maya" class="img">
+                    <h4> VIAJA  A LA RIVIERA MAYA</h4>
+                    <p>4 Días / 3 Noches<br>Del 26 al 29 de Abril</p>
+                    <p>Incluye hospedaje y vuelo en avión o viaje en autobús.</p>
+                    <p>Desde</p>
+                    <h3>$9,630 por adultos y $1,000 por menores de 12.</h3>
+                </section>
+
+                <section id="Ofertas" class="seccion">
+                    <h2>Ofertas</h2>
+                    <h3>Oferta exclusiva para este día del niño.</h3>
+                    <p>Festeja a los pequeños de la casa con un viaje inigualable, los niños te lo agradecerán.</p>
+                    <img src="Img/loro-parque-2.webp" alt="zoo" class="img">
+                    <p>LORO PARQUE, EL ZOO DE TENERIFE</p>
+                    <p>Visita nuestras instalaciones y conoce a nuestros animales, podrás ver desde un acuario lleno de medusas coloridas y fluorescentes,<br> tiburones y peces tropicales, hasta un recinto de leones africanos, <br>así como un aviario con gran variedad de guacamayos de muchos colores entre otras aves tropicales.</p>
+                    <img src="Img/loro-parque-tenerife.jpg.webp" alt="guacamayos" class="img">
+                    <p>Podras visitar nuestras áreas de juegos para niños y bebés,<br> así como una sala de cine con películas sobre la importancia del medio ambiente, y muchas otras atracciones que los niños amarán.</p>
+                    <p>Del 28 de Abril al 2 de Mayo</p>
+                    <p>Cancelación gratuita</p>
+                    <p>Con un descuento increible del 20%</p>
+                    <p>Desde</p>
+                    <h3>$490 por adultos y $200 por niños de 5 a 12 años. Menores de 5 años, entrada gratuita</h3>
+                    <br>
+                    <hr>
+                    <br>
+                    <h2>También tenemos increibles ofertas para el día del padre.</h2>
+                    <p>Disfruta y celebra a papá en un viaje único.</p>
+                    <img src="Img/imagen12.jpeg" alt="Playa" class="img">
+                    <p>PUERTO VALLARTA, MÉXICO.</p>
+                    <p>5 Días / 4 Noches.<br>Del 13 al 17 de Junio.</p>
+                    <p>Cancelación gratuita</p>
+                    <p>Con un descuento increible del 20% por el día de la padre</p>
+                    <p>Desde</p>
+                    <h3>$6000 por adultos y $800 por menores de 5 a 12 años. Menores de 5 años, viaje gratuito</h3>
+                </section>
+
+                <section id="Suscripción" class="seccion">
+                    <h2>Suscripción</h2>
+                    <h4>Puedes suscribirte a nuestra página web para obtener descuentos y una mejor experiencia.</h4>
+                    <form>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <input type="password" placeholder="Contraseña" required>
+                        <button class="btn" type="submit" onclick="document.getElementById('miModal').style.display='block'">Suscribirse</button>
+                    </form>
+                    <!-- Estructura del modal -->
+                    <div id="miModal" class="modal">
+                        <div class="modal-contenido">
+                            <span class="cerrar" onclick="document.getElementById('miModal').style.display='none'">&times;</span>
+                            <p>¡FELICIDADES!<br>Te has suscrito a nuestra página de manera exitosa</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Pagos-en-línea" class="seccion">
+                    <h2>Pagos en línea</h2>
+                    <img src="Img/imagen13.jpeg" alt="tarjeta de credito" class="img">
+                    <h4>Puedes hacer pagos en línea desde la página, con cancelación gratuita.<br>En caso de que hayas pagado una parte, te reembolsamos el 100% de tu dinero.</h4>
+                    <h3>Decide tu forma de pago.</h3>
+                    <h4>
+                        <ul class="lista">
+                            <li>Tárgeta de Crédito</li>
+                            <li>Tárgeta de Débito</li>
+                            <li>Transferencia Bancaria</li>
+                            <li>Pagos en línea sin tarjeta</li>
+                            <li>Monedas virtuales o cripto monedas</li>
+                            <li>Pagos en efectivo a través de OXXO</li>
+                        </ul>
+                    </h4>
+                </section>
+
+                <section id="Comentarios" class="seccion">
+                    <h2>Comentarios</h2>
+                    <p>Juan M.<br>En verdad es una de las mejores agencias con las que he viajado, siempre está un acesor apoyandote en todas las duda que tengas. Sin duda la recomiendo mucho.</p>
+                    <p>Marta S.<br>El precio de los viajes es muy económico y siempre hay alguien ayudandote y dando instrucciones, sin duda una de las mejores.</p>
+                </section>
+
+                <section id="Contacto" class="seccion">
+                    <h2>Contacto</h2>
+                    <form>
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Correo" required>
+                        <textarea rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                        <button class="btn" type="submit" onclick="document.getElementById('miModal2').style.display='block'">Enviar mensaje</button>
+                    </form>
+                    <!-- Estructura del modal -->
+                    <div id="miModal2" class="modal">
+                        <div class="modal-contenido">
+                            <span class="cerrar" onclick="document.getElementById('miModal2').style.display='none'">&times;</span>
+                            <p>Mensaje enviado exitosamente</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Ubicacion" class="seccion">
+                    <h2>Ubicación</h2>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.5286131366865!2d-103.31221792498297!3d20.525541481000833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f4daad5240069%3A0x4c14fc392e7d6f9d!2sAeropuerto%20Internacional%20de%20Guadalajara!5e0!3m2!1ses-419!2smx!4v1750086265351!5m2!1ses-419!2smx" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </section>
+
+                <section id="PreguntasFrecuentes" class="faq">
+                    <h2>Preguntas Frecuentes</h2>
+                    <details>
+                        <summary>¿Cuentan con seguro de viaje?</summary>
+                        <p>Sí, contamos con seguro de viaje en cualquier parte del mundo.</p>
+                    </details>
+
+                    <details>
+                        <summary>¿Cómo me puedo comunicar con ustedes?</summary>
+                        <p>Puede hacerlo desde la sección de Contacto</p>
+                    </details>
+
+                    <details>
+                        <summary>¿En dónde se encuentran ubicados?</summary>
+                        <p>Tenemos diferentes puntos en todo el país, puede encontrar el más cercano a usted buscándonos en el mapa como<summary>AGENCIA DE VIAJES "VIVE SIN LÍMITES"</summary></p>
+                    </details>
+                </section>
+
+                <footer>
+                    <p>&copy; 2025 Vive Sin Límites. Todos los derechos reservados.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
